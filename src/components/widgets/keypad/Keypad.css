@@ -1,0 +1,8 @@
+/* Style for the draggable handle */
+.drag-handle {
+    cursor: grab; /* Hand-like cursor */
+}
+
+.drag-handle:active {
+    cursor: grabbing; /* Grabbing hand cursor while dragging */
+}

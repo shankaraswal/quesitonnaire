@@ -1,0 +1,12 @@
+version: "3"
+services:
+  sherpal-fe:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    networks:
+      default:
+        aliases:
+          - sherpal.inc.localhost

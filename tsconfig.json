@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Target modern ECMAScript
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+
+    // Include DOM and ESNext features
+    "allowJs": true, // Allow JavaScript files
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "esModuleInterop": true, // Enable compatibility with CommonJS and ES modules
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules without default exports
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true, // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file casing
+    "module": "ESNext", // Use the ES module system
+    "moduleResolution": "Node", // Resolve modules in Node.js style
+    "resolveJsonModule": true, // Include JSON files as modules
+    "isolatedModules": true, // Ensure each file acts as a separate module
+    "noEmit": true, // Disable emitting compiled files
+    "jsx": "react-jsx", // Use React 17+ JSX transform
+    "baseUrl": "./", // Set base URL for module resolution
+    "paths": {
+      // Set up module path aliases if needed
+      "src/*": ["src/*"]
+    },
+    "types": ["@types/node", "@types/jest"] // Include Node.js and Jest types
+  },
+  "include": [
+    "src/**/*" // Include all files in the `src` directory
+  ],
+  "exclude": [
+    "node_modules", // Exclude `node_modules`
+    "build", // Exclude build artifacts
+    "dist" // Exclude distribution files
+  ]
+}

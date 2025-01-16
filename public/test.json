@@ -1,0 +1,16 @@
+{
+  "1": {
+    "timingInfo": "Practice tests are timed...",
+    "scoreInfo": "When you finish the practice test...",
+    "assistiveTech": "Be sure to practice with any AT...",
+    "noDeviceLock": "We don't lock your device during practice...",
+    "timeLimit": 600
+  },
+  "2": {
+    "timingInfo": "Tests are available anytime...",
+    "scoreInfo": "Detailed score analysis is provided...",
+    "assistiveTech": "Compatible with most modern assistive technologies...",
+    "noDeviceLock": "You can switch between apps during practice sessions...",
+    "timeLimit": 900
+  }
+}

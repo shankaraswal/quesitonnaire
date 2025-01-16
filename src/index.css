@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default Theme Variables */
+:root {
+  --background-primary: #003554;
+  --background-secondary: #333333;
+  --background-accent: #F0F0F0;
+  --background-neutral: #FFFFFF;
+
+  --text-primary: #000000;
+  --text-secondary: #FFFFFF;
+  --text-accent: #F0F0F0;
+  --text-neutral: #626262;
+
+  --button-primary: #FFFFFF;
+  --button-secondary: #333333;
+  --button-accent: #E8B700;
+  --button-neutral: #FF0000;
+
+  --border-primary: #B8B8B8;
+  --border-secondary: #333333;
+  --border-accent: #E8B700;
+  --border-neutral: #F0F0F0;
+}
+  
+/* Practice Theme */
+[data-theme="practice"] {
+  --background-primary: #003554;
+    --background-secondary: #333333;
+    --background-accent: #F0F0F0;
+    --background-neutral: #FFFFFF;
+  
+    --text-primary: #000000;
+    --text-secondary: #FFFFFF;
+    --text-accent: #F0F0F0;
+    --text-neutral: #626262;
+  
+    --button-primary: #FFFFFF;
+    --button-secondary: #333333;
+    --button-accent: #E8B700;
+    --button-neutral: #FF0000;
+  
+    --border-primary: #B8B8B8;
+    --border-secondary: #333333;
+    --border-accent: #E8B700;
+    --border-neutral: #F0F0F0;
+}
+
+/* Domain Theme */
+[data-theme="domain"] {
+  --background-primary: #DFD265;
+  --background-secondary: #333333;
+    --background-accent: #F0F0F0;
+    --background-neutral: #FFFFFF;
+  
+    --text-primary: #000000;
+    --text-secondary: #000000;
+    --text-accent: #F0F0F0;
+    --text-neutral: #626262;
+  
+    --button-primary: #333333;
+    --button-secondary: #FFFFFF;
+    --button-accent: #E8B700;
+    --button-neutral: #FF0000;
+  
+    --border-primary: #B8B8B8;
+    --border-secondary: #333333;
+    --border-accent: #E8B700;
+    --border-neutral: #F0F0F0;
+}
+
+/* Endurance Theme */
+[data-theme="endurance"] {
+  --background-primary: #AFD08A;
+  --background-secondary: #333333;
+  --background-accent: #F0F0F0;
+  --background-neutral: #FFFFFF;
+
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --text-accent: #F0F0F0;
+  --text-neutral: #626262;
+
+  --button-primary: #FFFFFF;
+  --button-secondary: #333333;
+  --button-accent: #E8B700;
+  --button-neutral: #FF0000;
+
+  --border-primary: #888888;
+  --border-secondary: #333333;
+  --border-accent: #E8B700;
+  --border-neutral: #F0F0F0;
+}
+
+
+/* Utility Classes */
+@layer components {
+  body, html{
+    @apply overflow-hidden max-h-screen;
+    }
+  .full-screen{
+    @apply h-screen min-h-screen !w-full overflow-hidden overflow-y-auto;
+  }
+  .full-content{
+    @apply h-[calc(100vh-248px)] min-h-[calc(100vh-248px)] !w-full overflow-hidden overflow-y-auto;
+  }
+  .sherpal-alert {
+    @apply border border-border-primary p-4 rounded-md bg-accent text-h1;
+  }
+
+  .error-text {
+    @apply text-red-500 text-smallSize;
+  }
+}

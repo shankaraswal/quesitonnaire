@@ -1,0 +1,28 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Java
+*.class
+*.log
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# JetBrains IDEs (IntelliJ, PhpStorm, PyCharm, etc.)
+.idea/
+
+# Linux
+*~
